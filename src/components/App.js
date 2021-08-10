@@ -1,6 +1,9 @@
 /* COMPONENTS */
 import RecipeList from "./RecipeList";
 
+/* STYLING */
+import "../css/app.css";
+
 function App() {
   return <RecipeList recipes={sampleRecipes} />;
 }
