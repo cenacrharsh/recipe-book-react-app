@@ -43,7 +43,21 @@ function App() {
     handleRecipeAdd,
     handleRecipeDelete,
     handleRecipeSelect,
+    handleRecipeChange,
   };
+
+  /* FUNCTION TO HANDLE CHANGE IN RECIPE */
+  function handleRecipeChange(id, recipe) {
+    // (id of recipe we want to change, new recipe)
+
+    const newRecipes = [...recipes];
+    const index = newRecipes.findIndex((r) => r.id === id);
+
+    // SWAPPING SELECTED RECIPE FROM ORIGINAL ARRAY OF RECIPES
+    newRecipes[index] = recipe;
+
+    setRecipes(newRecipes);
+  }
 
   /* FUNCTION TO HANDLE EDIT BUTTON */
   function handleRecipeSelect(id) {
