@@ -7,4 +7,4 @@
 
 - used `UUID` package for Random Id's
   (`npm i uuid` and `import { v4 as uuidv4 } from 'uuid';`)
-- 
+- LocalStorage used for persistent state.
