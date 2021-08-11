@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 
 /* COMPONENTS */
 import RecipeList from "./RecipeList";
+import RecipeEdit from "./RecipeEdit";
 
 /* STYLING */
 import "../css/app.css";
@@ -69,6 +70,7 @@ function App() {
   return (
     <RecipeContext.Provider value={recipeContextValue}>
       <RecipeList recipes={recipes} />
+      <RecipeEdit />
     </RecipeContext.Provider>
   );
 }
